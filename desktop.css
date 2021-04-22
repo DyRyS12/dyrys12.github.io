@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px) {
+    .grid {
+        margin: 0 auto;
+        display: grid;
+        min-height: 900px;
+        width: 80%;
+        grid-template: repeat(15, 100px) / repeat(12, 1fr);
+        justify-items: center;
+    }
+    
+    .nav_bg {
+        background-color: rgb(255, 255, 255);
+        grid-area: 1 / 1 / span 1 / span 12;
+        z-index: 0;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .nav_logo {
+        grid-area: 1 / 1 / span 1 / span 3;
+        z-index: 1;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .nav_menu {
+        grid-area: 1 / 4 / span 1 / span 9;
+        z-index: 1;
+        width: 100%;
+        background-color: blueviolet;
+    }
+    
+    .bg_shadow {
+        box-shadow: 0px 0px 10px black;
+    }
+}    
